@@ -1,0 +1,95 @@
+<!--p-1809290106-11-1-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>校园办公系统认证页面</title>
+		<style type="text/css">
+			#div1{text-align:center;
+			margin:0 auto;background:#00FF99 url("bgimages.jpg");}
+			table{border:2px double #0000CC;text-align:center;align:center;margin:0px auto;}
+			#td1{text-align:right;font-size:20px;color:#6600FF;}
+			#td2{text-align:left;}
+			label{color:red;font-weight:bold;}
+			h3{margin-left:35%;text-align:center;background-color:#0033ff;width:500px;height:40px;padding:8px auto;font-size:28px;font-family:隶书;color:white;}
+			input{height:24px;}
+		</style>
+		<script type="text/javascript">
+			function $(id){return document.getElementById(id);}
+			function checkcardno(){
+				var cno=myform.cardno.value;
+				$("err_cardno").innerHTML="";
+				if(cno==""||cno==null){
+					$("err_cardno").innerHTML="卡号不能为空!";
+				}else if(cno.length!=10){
+					$("err_cardno").innerHTML="卡号长度必须为10!";
+				}else{
+					var firstnum=cno.charAt(0);
+					if(firstnum=="0")
+					{
+						$("err_cardno").innerHTML="卡号首字母必须不为0!";
+					}else if(parseInt(cno).toString().length!=10)
+					$("err_card_no").innerHTML="卡号不全为数字!";
+					alert("卡号不全为数字!");
+				}
+			}
+			function checkkey(){
+				var key1=myform.key.value;
+				$("err_key").innerHTML="";
+				if(key1==""||key1==null)
+				{
+					$("err_key").innerHTML="口令不能为空!";
+				}else{
+					if(key1.length<8||key1.length>15)
+					{
+						$("err_key").innerHTML="口令长度不能小于8或大于15!";
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div id="div1">
+			<h3 align="center">校园办公系统认证页面</h3>
+			<form action="" method="post" name="myform">
+				<table>
+					<tr>
+						<td rowspan="5"><img src="sfyz_2.jpg" ></td>
+						<td id="td1">校园卡号:</td>
+						<td id="td2">
+							<input type="text" name="cardno" onblur="checkcardno();" />
+						</td>
+						<td><label id="err_cardno"></label></td>
+					</tr>
+					<tr>
+						<td id="td1">口&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;令:</td>
+						<td id="td2">
+							<input type="password" name="key" onblur="checkkey();"/>
+						</td>
+						<td><label id="err_key"></label></td>
+					</tr>
+					<tr>
+						<td id="td1">二次口令:</td>
+						<td id="td2">
+							<input type="password" name="key2" onblur="checkkey2();"/>
+						</td>
+						<td><label id="err_key2"></label></td>
+					</tr>
+					<tr>
+						<td id="td1">QQ/微信:</td>
+						<td id="td2">
+							<input type="text" name="qqwx" onblur="checkqqwx();"/>
+						</td>
+						<td><label id="err_qqwx"></label></td>
+					</tr>
+					<tr>
+						<td rolspan="3">
+							<input type="submit" value="提交" />
+							<input type="reset" value="重置" />
+						</td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,48 @@
+<!--p-1809290106-->
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8">
+  <style type="text/css">
+  	body{background: white;}
+  </style>
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>筒易密码验证</title>
+  <script type="text/javascript">
+  function checkKey(){
+	  var keystr=document.myform.key.value;
+	  var count=0;
+	  if(keystr.length<8)
+	  {
+		  alert("密码长度必须大于等于8！,请重输！");
+		  document.myform.key.value="";
+	  }else{
+	  for(var i=0;i<=keystr.length-1;i++)
+	  {
+		  var onechar=keystr.charAt(i).toUpperCase()
+		  if(onechar>="A"&&onechar<="Z"){count++;}
+	  }
+	  if(count<1)
+	  {
+		  alert("密码中必须包含一个以上字母！,请重输！");
+		  document.myform.key.value="";
+	  }
+	  }
+}
+</script>
+</head>
+<body>
+	<h3>简易密码验证</h3>
+	<form name="myform" method="post" action="">
+	<label>用户名：</label><input type="text" name="username"value="张试验"readonly><br>
+	<label>密码：</label><input type="passworld" name="key"><br>
+	<input type="button" value="验证" onclick="checkKey();">
+	<input type="reset">
+</form>
+</body>
+</html>
+
+
+

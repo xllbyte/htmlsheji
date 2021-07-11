@@ -1,0 +1,42 @@
+
+<!-- p-1809290106-9-3 -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>选择文件类型对话框界面</title>
+		<style type="text/css">
+			fieldset{background-color:#99FF99;width:300px;height:150px;border:8px ridge #3333CC;margin:10px auto;}
+			legend{color:blue;}
+			form{margin:20px;padding:20px;}
+			body{background: white;}
+		</style>
+		<script type="text/javascript">
+			function $(id){return document.getElementById(id);}
+			function inputName(){
+				var name=prompt("输入你的姓名: ","你好！");	//prompt("提示文字"，“默认值”)
+				if(name!=null)
+				{
+					alert("你的姓名是:"+name);
+					$("name1").value=name;
+				}
+				else{
+					alert("请你输入姓名！");
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<form action="" method="post">
+			<fieldset id="">
+				<legend align="center">消息对话框综合应用</legend>
+				<form action="" method="post">
+					你的姓名:<br>
+					<input type="text" id="name1" maxlength="10" readonly="readonly"/><br>
+					<input type="button" value="输入姓名" onclick="inputName()"/>
+					<input type="reset" value="清空" />
+				</form>
+			</fieldset>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,17 @@
+<!--p-1809290106-4-1-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="{CHARSET}">
+		<title></title>
+		<!--2.表现形式-->
+		<style type="text/css">
+			body{background: #66ffff;font-size: 18px;}
+			div{width: 100%;height: 100px;background: #99cc33;}
+			p1{color: blue;font-size: 32px;}
+		</style>
+	</head>
+	<body>
+		<!--1.内容设计-->
+	</body>
+</html>

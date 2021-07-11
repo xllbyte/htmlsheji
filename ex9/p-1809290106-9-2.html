@@ -1,0 +1,30 @@
+<!-- p-1809290106-9-2 -->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>计算累加和页面效果图</title>
+		<style type="text/css">
+			div{text-align:center;margin:20px auto;line-height:1.5em;border:18px groove #66FF66;width:560px;height:260px;font-weight:bold;}
+			form{margin:20px auto;padding:5px;}
+			body{background: white;}
+		</style>
+		<script type="text/javascript" src="sum.js"></script>
+	</head>
+	<body>
+		<div>
+			<h3>计算任意区间内连续自然数的累加和</h3>
+			<form action="" method="post">
+				<h3>定义区间</h3>
+				<label>起始数</label>
+				<input type="text" id="start_num" name="start_num"/>
+				<label>终止数</label>
+				<input type="text" id="end_num" name="end_num"/><br>
+				<label>累加和</label>
+				<input type="text" id="sum" name="sum" readonly="readonly"/><br><br>
+				<input type="button" value="计算" onclick="show()"/>&nbsp;&nbsp;&nbsp;&nbsp;
+				<input type="reset" value="清空" />
+			</form>
+		</div>
+	</body>
+</html>

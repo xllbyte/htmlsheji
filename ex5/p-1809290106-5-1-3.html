@@ -1,0 +1,34 @@
+
+<!--p-1809290106-5-1-3.html-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>CSS+DIV基础页面布局设计</title>
+		<link href="layout_3.css" rel="stylesheet" type="text/css">
+		<style type="text/css">
+			@import url("layout_3.css");
+			body{padding:0px;margin:0 auto;font-weight:bolder;font-size:24px;}
+			#container{width:100%;}
+			#header{height:100px;background:pink;margin-bottom:5px;}
+			#menu{height:30px;background:red;margin-bottom:5px;}
+			#mainContent{margin-bottom:5px;height:350px;}
+			#sidebar{float:left;height:350px;background:#66FF99;}
+			#content{margin-left:205px;height:350px;background:#33FFAA;}
+			#footer{height:60px;background:#99CC66;}
+			.clearfloat{clear:both;}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div id="header">这是头部信息区</div>
+			<div id="menu">这是导航菜单区</div>
+			<div id="maincontent">
+				<div id="sidebar">这是左侧边信息区</div>
+				<div id="content">2列左侧固定右侧自适应宽度，指定高度+头部+导航+尾部</div>
+			</div>
+			<div class="clearfloat"></div>
+			<div id="footer">这是版权信息区</div>
+		</div>
+	</body>
+</html>

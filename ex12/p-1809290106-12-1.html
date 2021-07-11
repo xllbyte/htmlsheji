@@ -1,0 +1,58 @@
+<!--p-1809290106-12-1-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>简易福彩投注程序</title>
+		<style type="text/css">
+			
+			body{background: white;}
+			div{margin:0px auto;width:450px;height:260px;border:2px solid #ff3300;}
+			h2{font-size:28px;text-align:center;}
+			td{font-size:18px;font-weight:bold;}
+		</style>
+		<script type="text/javascript">
+			function $(id){return document.getElementById(id);}
+			function selectnumber(num){
+				var number=new Array();
+				for(var i=0;i<=7;i++){
+					temp=Math.floor(Math.random()*30+1);
+					for(var j=0;j<=number.length-1;j++){
+						if(temp==number[j]){
+							temp=Math.floor(Math.random()*30+1);
+							j=0;
+						}
+					}
+					number[i]=temp;
+				}
+				$(num).value=number.sort().join(" ");
+			}
+		</script>
+	</head>
+	<body>
+		<div id="">
+			<img src="ico_7l.gif" >
+			<form action="" method="post">
+				<table align="center" border="0" cellspacing="" cellpadding="">
+					<caption><h2>福利彩票投注助手</h2></caption>
+					<tr>
+						<td>彩票号码</td>
+						<td><input type="text" id="number1" maxlength="28" readonly /></td>
+						<td><input type="button" name="" id="" value="投注" onclick="selectnumber('number1');"/></td>
+						<td rowspan="3"><input type="reset" name="" id="" value="清空" /></td>
+					</tr>
+					<tr>
+						<td>彩票号码</td>
+						<td><input type="text" id="number2" maxlength="28" readonly value=""/></td>
+						<td><input type="button" name="" id="" value="投注" onclick="selectnumber('number2');"/></td>
+					</tr>
+					<tr>
+						<td>彩票号码</td>
+						<td><input type="text" id="number3" maxlength="28" readonly value=""/></td>
+						<td><input type="button" name="" id="" value="投注" onclick="selectnumber('number3');"/></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</body>
+</html>

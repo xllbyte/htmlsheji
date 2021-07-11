@@ -1,0 +1,45 @@
+<!--p-18092901-3-2-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="{CHARSET}">
+		<title>多媒体及滚动字幕应用</title>
+		<!--2.表现形式-->
+		<style type="text/css">
+			
+			ul{list-style-type: none;}
+			li{float:left;margin: 20px;}
+			div{height: 250px; background-color: #99cc00;text-align: centre;}
+			marquee{font-size: 16px;padding: 4px auto;}
+			p{font-family: 黑体;font-size: 16px;text-align: centre;}
+			h2{text-align: centre;}
+
+		</style>
+	</head>
+	<body>
+		<!--1.内容设计-->
+		<h2>明月几时有</h2>
+		<hr color="blue" />
+		<p>明月几时有？把酒问青天。
+			<br />
+                     不知天上宫阙，今夕是何年。<br />
+                     
+                     我欲乘风归去，又恐琼楼玉宇，高处不胜寒，起舞弄清影，何似在人间。 <br />
+                     转朱阁，抵绮户，照无眠。<br />
+                    不应有恨，何事偏向别时圆。   <br />
+                    人有悲欢离合，月有阴晴圆缺，此事古难全。<br /> 
+                    但愿人长久，千里共婵娟。<br />
+        </p>
+        <hr  color="red" />
+        <div>
+        	<ul>
+        		<li><embed src="embed/htmlexample.mpeg" width="300" height="150" autostart="true" loop="true" ></embed></li>
+        		<li><embed src="embed/62.swf" width="300" height="150" autostart="true" loop="true" ></embed></li>
+        		<li><embed src="embed/0303.swf" width="300" height="150" autostart="true" loop="true" ></embed></li>
+        	</ul>
+        </div>
+        
+        <marquee direction="up" behavior="alternate" onmousedown="this.stop()" onmousedown="this.start()"><h3>欢迎来到我的多媒体世界</h3></marquee>
+	    <embed src="embed/蔡琴明月几时有.mp3" loop="true" autostart="true" width="0" height="0"></embed>
+	</body>
+</html>

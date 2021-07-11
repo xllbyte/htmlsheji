@@ -1,0 +1,38 @@
+<!--p-1809290106-10-2-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			body{background: white;}
+			legend{font-size: 28px;font-weight: bolder;}
+			fieldset{margin: 20px auto;width: 300px;padding: 0 40px;border: 2px outset #009966;}
+		</style>
+		<script type="text/javascript">
+			function compute_sum(n){
+				for(var i=1,sum=0;i<=n;i++)
+				{
+					for(var j=i,sum1=1;j>0;j--)
+					{
+						sum1=sum1*j;
+					}
+					sum=sum+sum1;
+					document.write(i+"!="+sum1+"<br>");
+					
+				}
+				document.write("阶乘的和="+sum);
+			}
+		</script>
+	</head>
+	<body>
+		<fieldset >
+			<legend>计算1!+2!+...+N!</legend>
+			<script type="text/javascript">
+			var n=prompt("输入整数N");
+			compute_sum(n);
+		</script>
+		</fieldset>
+
+	</body>
+</html>

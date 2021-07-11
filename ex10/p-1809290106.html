@@ -1,0 +1,49 @@
+<!--p-1809290106-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>计算1+1/3+1/5+.....+1/(2n-1)累加和</title>
+		<style type="text/css">
+			div {
+				width: 300px;
+				height: 200px;
+				border: 8px groove #009900;
+				margin: 50px auto;
+				text-align: center;
+				line-height: 2em;
+			}
+
+			h3 {
+				text-align: center;
+				color: #0000cc;
+				padding: 10px;
+			}
+		</style>
+
+        <script type="text/javascript">
+       			function compute(){
+			    var n = document.getElementById("n").value;    
+			    var result = document.getElementById("result");
+			    var sum = 0;
+			    for(var i=1; i<=n; i++){        
+			        sum += 1/(2*i-1);
+			    }
+			    result.value = sum;
+			}
+
+		</script>
+	</head>
+	<body>
+		<div>
+			<h3>计算累加和</h3>
+			<form name="" action=" " method="">
+				<label>输入数N:</label><input type="text" id="n" name="" /><br />
+				<label>累加和:</label><input  type="text" id="result" name="" /><br />
+				<input type="button" onclick="compute();" id="sum"  value="计算累加和" />
+				<input type="reset" value="重置" />
+
+			</form>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,72 @@
+<!--p-1809290106-5-1-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>CSS+DIV基础页面布局</title>
+		<!--2.css定义-->
+		<style type="text/css">
+			body{font-size: 28px;line-height:1.5em;margin: 0px auto; font-weight: bolder;}
+			#container {
+                 width: 900px;
+				 margin: 0px auto;
+				 
+			}
+
+			#header {
+				height: 70px;
+				background: #CCFFCC;
+				margin-bottom: 8px;
+			}
+
+			#nav {
+				height: 40px;
+				background: #CCFFCC;
+				margin-bottom: 8px;
+			}
+            #mainbody{
+				margin-bottom: 8px;
+			}
+			
+			#body-left {
+				float: left;
+				width: 664px;
+				height: 400px;
+				background: #FFCC99;
+			}
+
+			#body-right {
+				float: right;
+				width: 228px;
+				height: 400px;
+				background: #FFCC99;
+			}
+
+			#clearfloat {
+				clear: both;
+				float: both;
+			}
+
+			#footer {
+				background: #00EFFF;border-top: 8px solid white;
+
+				height: 50px;
+				margin: 0 auto;
+		
+			}
+		</style>
+	</head>
+	<body>
+		<!--1.内容设计-->
+		<div id="container">
+			<div id="header">这是头部信息区</div>
+			<div id="nav">这是导航信息区</div>
+			<div id=mainbody>
+				<div id="body-left">这是主体信息区</div>
+				<div id="body-right">这是右侧信息区</div>
+			</div>
+			<div id="clearfloat"></div>
+			<div id="footer">这是版权信息区</div>
+		</div>
+	</body>
+</html>

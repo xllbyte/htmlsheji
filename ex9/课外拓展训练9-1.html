@@ -1,0 +1,39 @@
+<!--p-1809290106-->
+<!DOCTYPE html>
+ <head>
+  <meta charset="utf-8">
+  <style type="text/css">
+  	body{background: white;}
+  </style>
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>求100以内的素数</title>
+ </head>
+ <body>
+  <h3>100以内的素数有：</h3>
+  <script type="text/javascript">
+	var prime=true;
+	var primesum=0;
+	for(var i=2;i<=100;i++)
+	{
+		var prime=true;
+		for(var j=2;j<i;j++)
+		{
+			if(i%j==0)
+			{
+				prime=false;
+				break;
+			}
+		}
+		if(prime)
+		{
+			primesum++;
+			document.write(i+"");
+		}
+	}
+	document.write("<br>素数有：  "+ primesum   );
+</script>
+ </body>
+</html>

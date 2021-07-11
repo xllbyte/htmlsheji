@@ -1,0 +1,29 @@
+<!--p-1809290106-5-1-2-->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>CSS+DIV基础页面布局设计</title>
+		<link href="layout_2.css" rel="stylesheet" type="text/css">
+		<style type="text/css">
+			@import url("layout_2.css");
+			body{font-weight:bolder;font-size:28px;margin:0;border:0px auto;line-height:1.5em;}
+			#container{width:900px;margin:0 auto;}
+			#header{height:100px;background:#6CF;margin-bottom:5px;}
+			#maincontent{margin-bottom:5px;}
+			#sidebar{float:left;width:200px;height:500px;background:#9CF;}
+			#content{float:right;width:695px;height:500px;background:#8FF;}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div id="header">这是头部信息区</div>
+			<div id="maincontent">
+				<div id="sidebar">这是左侧边信息区</div>
+				<div id="content">2列固定宽度左窄右宽+头部</div>
+			</div>
+			<div class="clearfloat"></div>
+		</div>
+	</body>
+</html>

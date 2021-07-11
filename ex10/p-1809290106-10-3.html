@@ -1,0 +1,86 @@
+<!--p-1809290106-10-3-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JavaScript常用函数的应用</title>
+		<style type="text/css">
+			body{background: white;}
+			#div0{font-size: 20px;font-weight: bolder;width: 1000px;border: 1px solid black;margin: 0 265px;}
+			h3{text-align: center;}
+			.b{font-size: 18px;color: red;}
+		</style>
+	</head>
+	<body>
+		<div id="div0">
+			<h3>JavaScript常用函数的应用</h3>
+			<h1 class="b">&nbsp;&nbsp;1.计算表达式的结果函数eval(“字符串”)</h1>
+			&nbsp;&nbsp;&nbsp;
+			<script type="text/javascript">
+				var x =10,y=20;
+			document.write("1000+3/5="+eval("1000+3/5")+"&nbsp;&nbsp;&nbsp;&nbsp;x=10,y=20,x*y="+eval(x*y));
+			document.write("<br>&nbsp;&nbsp;&nbsp;&nbsp;2+2="+eval("2+2")+"&nbsp;&nbsp;&nbsp;&nbsp;x=10,x+17="+eval(x+17));
+			</script>
+			<h1 class="b">&nbsp;&nbsp;2.编码函数escape(“字符串”)</h1>
+			&nbsp;&nbsp;&nbsp;
+			<script type="text/javascript">
+				document.write("escape('&')="+escape('&'));
+				document.write("<br>&nbsp;&nbsp;&nbsp;&nbsp;escape('my name is 张华')="+escape("&nbsp;&nbsp;my name is 张华"));
+			</script>
+			<h1 class="b">&nbsp;&nbsp;3.解码函数unecspe(String)</h1>
+			&nbsp;&nbsp;&nbsp;
+			<script type="text/javascript">
+				document.write("unescape('%26')="+unescape("%26"));
+				document.write("<br>&nbsp;&nbsp;&nbsp;&nbsp;unescape('my%20name%20is%20%u5F20%u534E')="+unescape('my%20name%20is%20%u5F20%u534E'));
+			</script>
+			<h1 class="b">&nbsp;&nbsp;4.字符型转换成浮点数函数parseFloat(String)</h1>
+			&nbsp;&nbsp;&nbsp;
+			<script type="text/javascript">
+				document.write("parseFloat('3.14')="+parseFloat('3.14')+"&nbsp;&nbsp;&nbsp;&nbsp;parseFloat('314e-2')="+parseFloat('314e-2'));+
+				document.write("<br>&nbsp;&nbsp;&nbsp;&nbsp;parseFloat('3.14ab')="+parseFloat('3.14ab')+"&nbsp;&nbsp;&nbsp;&nbsp;parseFloat('FF2')="+parseFloat('FF2'));
+				document.write("<br>&nbsp;&nbsp;&nbsp;&nbsp;parseFloat('345.25FF2')="+parseFloat('345.25FF2'));
+			</script>
+			<h1 class="b">&nbsp;&nbsp;5.字符型转换成整型函数parseInt(numberstring.radix)</h1>
+			&nbsp;&nbsp;&nbsp;
+			<script type="text/javascript">
+				document.write("32:"+parseInt("32"));
+				document.write("<br>&nbsp;&nbsp;&nbsp;&nbsp;032:"+parseInt("032"));
+				document.write("<br>&nbsp;&nbsp;&nbsp;&nbsp;0x32:"+parseInt("0x32"));
+				document.write("<br>&nbsp;&nbsp;&nbsp;&nbsp;parseInt('15*3',10)="+parseInt("15*3",10));
+			</script>
+			<h1 class="b">&nbsp;&nbsp;6.判断是否是NaN函数isNaN()</h1>
+			&nbsp;&nbsp;&nbsp;
+			<script type="text/javascript">
+				document.write("isNN('5454g')="+isNaN("5454g"));
+				document.write("<br>&nbsp;&nbsp;&nbsp;&nbsp;isNaN('789')="+isNaN("789"));
+			</script>
+			<h1 class="b">&nbsp;&nbsp;7.保留固定小数点位数的函数toFixed(n)</h1>
+			&nbsp;&nbsp;&nbsp;
+			<script type="text/javascript">
+				document.write("356.25678.toFixed(2)="+356.25678.toFixed(2));
+				document.write("&nbsp;&nbsp;&nbsp;&nbsp;356.25.toFixed(3)="+356.25.toFixed(3));
+			</script>
+			<h1 class="b">&nbsp;&nbsp;8.将数值换为不同进制的字符串函数toString(radix)</h1>
+			&nbsp;&nbsp;&nbsp;
+			<script type="text/javascript">
+				var num=64;
+				document.write("64.toString()="+num.toString());
+				document.write("&nbsp;&nbsp;&nbsp;&nbsp;64.toString(2)="+num.toString(2));
+				document.write("&nbsp;&nbsp;&nbsp;&nbsp;64.toString(8)="+num.toString(8));
+			</script>
+			<h1 class="b">&nbsp;&nbsp;9.单个字符提取函数charAt(n)</h1>
+			&nbsp;&nbsp;&nbsp;
+			<script type="text/javascript">
+				var char1="ABCDEFG";
+				document.write("ABCDEFG.charAt(1)="+char1.charAt(1));
+				document.write("&nbsp;&nbsp;&nbsp;&nbsp;ABCDEFG.charAt(5)="+char1.charAt(5));
+				document.write("&nbsp;&nbsp;&nbsp;&nbsp;ABCDEFG.charAt(10)"+char1.charAt(10));
+				if(char1.charAt(10)=="")
+				{
+					document.write("是空串");
+				}
+				</script>
+			</script>
+		</div>
+	</body>
+</html>

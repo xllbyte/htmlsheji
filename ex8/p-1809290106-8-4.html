@@ -1,0 +1,44 @@
+<!--p-1809290101-8-4.html-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>纯CSS3偏光图像画廊</title>
+		<style type="text/css">
+			*{margin: 0px;padding: 0px;border: 0px;}
+			body{background: url(prj_8_4_wood-repeat.jpg);background-color: #959796;}
+			header{text-align: center;margin: 0 auto;color: #eeddff;}
+			#container{width: 900px;margin: 40px auto;text-align: center;}
+			h1{font-weight: bold;font-size: 48px;line-height: 50px;font-family: helvetica arial sans-serif;
+			color: #eee;text-shadow: 5px 5px 10px #000;letter-spacing: 5px;}
+			a:hover{color: #90bcdd;}
+			.gallery{width: 75%;height: 500px;float: left;}
+			a{position: absolute;float: left;padding: 10px;border: 1pa dashed #fff;background: #eee;text-shadow: 2px 4px 15px #333;
+			}
+			.pic-1{z-index: 1;transform:rotate(-15deg);left:20%;top:200px}
+			.pic-2{z-index: 5;transform:rotate(-5deg);left:40%;top:200px}
+			.pic-3{z-index: 3;transform:rotate(6deg);left:60%;top:200px}
+			.pic-4{z-index: 4;transform:rotate(18deg);left:20%;top:400px}
+			.pic-5{z-index: 1;transform:rotate(-15deg);left:40%;top:400px;}
+			.pic-6{z-index: 6;transform:rotate(10deg);left:60%;top:400px;}
+			a:hover{z-index: 10;transform: rotate(0deg);box-shadow: 3px 5px 15px #333;transform:scale(1.5,1.5);}
+		</style>
+	</head>
+	<body>
+		<div id=""class="container"></div>
+		<header >
+			<hroup>
+				<h1>纯CSS3偏光图像画廊</h1>
+				<h3>Copyright &copy; Line25.com. 版权所有&nbsp;2017-2025</h3>
+			</hroup>
+		</header>
+		<ul class="gallery">
+			<li><a href="" class="pic-1"title="pic-1"><img src="prj_8_4_1.jpg" ></a></li>
+			<li><a href="" class="pic-2"title="pic-2"><img src="prj_8_4_2.jpg" ></a></li>
+			<li><a href="" class="pic-3"title="pic-3"><img src="prj_8_4_3.jpg" ></a></li>
+			<li><a href="" class="pic-4"title="pic-4"><img src="prj_8_4_4.jpg" ></a></li>
+			<li><a href="" class="pic-5"title="pic-5"><img src="prj_8_4_5.jpg" ></a></li>
+			<li><a href="" class="pic-6"title="pic-6"><img src="prj_8_4_6.jpg" ></a></li>
+		</ul>
+	</body>
+</html>
